@@ -1,0 +1,14 @@
+packs:
+  marketing:
+    description: Marketing, copywriting, avatars, offers, hooks, funnels, launches, and human editing.
+    skills:
+      - avatar-builder
+      - attractive-character-builder
+      - offer-builder
+      - hook-angle-writer
+      - brand-voice-extractor
+      - podcast-to-copy
+      - nurture-email-writer
+      - launch-email-writer
+      - funnel-page-writer
+      - human-editor
