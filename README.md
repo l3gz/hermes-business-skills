@@ -75,19 +75,16 @@ python3 scripts/install_wizard.py
 
 ## Where skills install
 
-By default, skills install to:
+Skills always end up inside the active Hermes profile. The installer picks a default target with this order of precedence:
 
-```text
-~/.hermes/skills/
-```
+1. Explicit `--target <path>` always wins.
+2. If `HERMES_PROFILE` is set (for example `matt`), the default target is `~/.hermes/profiles/<HERMES_PROFILE>/skills`. This is the common case when you run the installer from inside a Hermes session.
+3. If `HERMES_HOME` is set without `HERMES_PROFILE`, the default target is `$HERMES_HOME/skills`.
+4. Otherwise the default target is `~/.hermes/skills` (the shared default profile).
 
-If `HERMES_HOME` is set, they install to:
+When the resolved target lands in the shared default profile while a non-default profile is active, the installer prints a loud warning on stderr. Pass `--target ~/.hermes/profiles/<name>/skills` (or set `HERMES_PROFILE`) to silence it.
 
-```text
-$HERMES_HOME/skills/
-```
-
-You can also pass `--target` explicitly.
+Both `HERMES_PROFILE` and `HERMES_HOME` are honored by `install_skills.py` and by the wizard. You can also pass `--target` explicitly to install into any directory you want.
 
 ## Design rules
 
