@@ -94,6 +94,26 @@ Rewrite for punch, rhythm, voice, and conversion. Preserve meaning.
 ### Diagnostic edit
 Return issues first, then rewrite only after the user approves or asks.
 
+## Hormozi's 8 Writing Rules
+
+From the Acquisition.com Workshop Black Book. These are the concrete copy rules Alex Hormozi uses across all marketing assets. Apply them alongside the principles above when editing any GrowthSquare client copy.
+
+1. **Keep everything below 3rd-grade reading level.** If a 9-year-old cannot read it aloud without stumbling, simplify it. Replace jargon with plain words: "We borrow money to buy bigger stuff" beats "We utilize leverage to gain higher returns on our equity checks."
+
+2. **Present voice.** Write as if the action is happening now, not in a hypothetical future. "When you create your sales page" beats "When you're creating your sales page."
+
+3. **Active, not passive.** Keep the actor visible. "We carried the body out of the room" beats "The body was carried out of the room." Passive voice hides responsibility and weakens the verb.
+
+4. **Avoid adverbs whenever possible.** Adverbs usually mean the verb is lame. "We slammed the door" beats "We shut the door really hard." Cut: very, super, way, actually, really, basically, extremely.
+
+5. **Short sentences.** Usually one comma. If a sentence has two commas, cut the middle clause or split into two sentences. "The red-masked man chased us until we lost our breath. We were trapped." beats "We tried to escape but the man, with the red mask, chased us until we lost our breath."
+
+6. **Positive language.** Say what to do, not what not to do. "Keep Going" beats "Don't Stop." "Stay inside" beats "Don't leave the facility." The brain processes the action word regardless of the negation, so negations often communicate the wrong instruction.
+
+7. **Remove redundant words.** "We left the building at the same time" beats "We simultaneously left the building at the same time." If a word repeats information another word already carries, cut it.
+
+8. **Remove unnecessary words.** If a word does not change the meaning of the sentence, cut it. "8 Writing Guidelines I Live By" beats "8 Guidelines For Writing I Live By." "He exited his car" beats "He was able to get out of his car."
+
 ## Final check
 
 Before returning edited copy, ask:
@@ -104,3 +124,4 @@ Before returning edited copy, ask:
 - Is the CTA stronger?
 - Are unsupported claims safer or flagged?
 - Does it sound like a real person wrote it?
+- Does it pass the 8 Hormozi writing rules (3rd-grade, active, no adverbs, short sentences, positive)?
