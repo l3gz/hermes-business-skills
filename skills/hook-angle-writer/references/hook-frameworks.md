@@ -161,3 +161,47 @@ The same angle is re-cut for each surface. Keep the angle; change the shape.
 - A hook may dramatize a real benefit; it may not promise a result the offer cannot deliver.
 - Flag any income, health, financial, or legal claim in a hook for confirmation and possible disclaimer.
 - Avoid fake scarcity, fake countdowns, and clickbait curiosity that the content does not pay off. These win a click and lose the customer.
+
+---
+
+## 11. Hormozi Ad Hook Taxonomy
+
+From $100M Leads. A deeper hook classification system for video and image ads. Use this to generate diverse creative variants for testing.
+
+### Verbal Hooks (what you say)
+
+1. **Labels:** call out a specific group by name. "Clark County moms." "Agency owners with 5-20 employees." Labels make the viewer self-identify immediately — "that's me" — and earn the next 3 seconds.
+
+2. **Yes-Questions:** ask a question where "yes" means they have the problem. "Wake up to pee more than once a night?" "Spend more time managing your tools than managing your clients?" The yes self-qualifies them and creates a micro-commitment.
+
+3. **If-Then statements:** "If you [specific situation], then [specific promise or consequence]." "If your agency runs on 4+ tools, then you're losing 10 hours a week." Combines qualification with a bold claim.
+
+4. **Ridiculous Results:** lead with a result so specific or extreme it forces attention. "I replaced my $300 skincare cream with a $39 peptide complex." "I went from 2 to 28 gym locations in 28 months." The specificity and extremity earn the watch.
+
+### Non-Verbal Hooks (what you show)
+
+1. **Contrast:** visual disruption through color, movement, or unexpected change. A presenter in a neon green shirt in a grey office. A sudden cut from stillness to motion. Contrast breaks the scroll pattern visually before the verbal hook lands.
+
+2. **Resemblance:** "look like a duck to catch ducks." Make the ad look like native content the avatar already watches. A UGC-style phone video for a B2C product. A LinkedIn text post for a B2B service. The ad blends into the feed because it resembles what the avatar already consumes.
+
+3. **The Scene:** a visual yes-question. Show a scene the avatar recognizes — a desk covered in sticky notes, a phone with 47 unread Slack messages, a closet full of unworn clothes. The visual alone makes them say "that's me" before a word is spoken.
+
+### The Cocktail Party Effect
+
+People filter out most stimuli but tune in when they hear their name (or something personally relevant). Hooks work the same way: a specific label, a specific pain, or a specific desire cuts through the noise because the brain recognizes it as "for me."
+
+**Application:** the more specific the hook (exact avatar, exact pain, exact desire), the harder it cuts through. Generic hooks ("want to grow your business?") get filtered. Specific hooks ("agency owners losing clients to late deliverables") get noticed.
+
+### The What-Who-When Value Framework
+
+From $100M Leads. A framework for extending a hook into a full ad body by layering three value dimensions:
+
+- **What (the value equation mapped to ad copy):**
+  - Dream Outcome ↔ Nightmare (what they want vs. what they fear)
+  - Perceived Success ↔ Risk (how likely it works vs. what could go wrong)
+  - Time-to-Goal ↔ Speed (how fast they get there)
+  - Effort/Sacrifice ↔ Ease (how hard vs. how easy you make it)
+
+- **Who (status dynamics):** who else benefits or judges when they succeed — spouse, kids, rivals, coworkers, competitors. Frame the result as a status shift, not just a practical improvement.
+
+- **When (timeline visualization):** past-present-future. Show them the before (past pain), the now (current frustration), and the after (future state with your offer). The contrast makes the gap vivid and the bridge desirable.

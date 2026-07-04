@@ -142,7 +142,7 @@ Completion: all discovery inputs are captured, with unknowns explicitly marked.
 
 ### 4. Determine the business stage
 
-Using the $100M Scaling Roadmap framework (see `references/strategy-frameworks.md`), classify the business:
+Using the $100M Scaling Roadmap framework (see `references/strategy-frameworks.md`), classify the business. For retention/LTV analysis (Stage 3+), also reference `references/retention-frameworks.md`.
 
 | Stage | Name | What it means | Channel implication |
 |---|---|---|---|
