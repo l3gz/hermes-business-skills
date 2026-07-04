@@ -42,6 +42,7 @@ Do not use this skill for:
 
 - offer creation from scratch, use `offer-builder`
 - avatar research from scratch, use `avatar-builder`
+- full multi-page funnel copy orchestration, use `funnel-copy-writer`
 - final human tone pass only, use `human-editor`
 - legal, health, income, or compliance review
 - building a full website with many unrelated pages

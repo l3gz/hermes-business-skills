@@ -7,7 +7,7 @@ license: MIT
 metadata:
   hermes:
     tags: [marketing, strategy, go-to-market, channel-selection, orchestrator, acquisition, hormozi]
-    related_skills: [avatar-builder, offer-builder, meta-ads-manager, meta-creative-tester, meta-audience-builder, meta-ads-scaler, campaign-optimizer, meta-lead-gen, ad-creative-brief-writer, ad-script-writer, vsl-writer, funnel-copy-writer, funnel-page-writer, hook-angle-writer, brand-voice-extractor, human-editor]
+    related_skills: [avatar-builder, offer-builder, attractive-character-builder, meta-ads-manager, meta-creative-tester, meta-audience-builder, meta-ads-scaler, campaign-optimizer, meta-lead-gen, ad-creative-brief-writer, ad-script-writer, vsl-writer, funnel-copy-writer, funnel-page-writer, hook-angle-writer, brand-voice-extractor, nurture-email-writer, launch-email-writer, podcast-to-copy, human-editor]
 ---
 
 # Marketing Strategy Orchestrator
@@ -49,6 +49,9 @@ Do not use this skill for:
 - creating the offer (→ `offer-builder`)
 - defining the avatar (→ `avatar-builder`)
 - extracting the brand voice (→ `brand-voice-extractor`)
+- building an attractive character (→ `attractive-character-builder`)
+- writing email sequences (→ `nurture-email-writer`, `launch-email-writer`)
+- repurposing podcast content (→ `podcast-to-copy`)
 
 ## The Prerequisite Gate (Non-Negotiable)
 
@@ -62,8 +65,9 @@ This skill **will not produce a strategy** until the prerequisites are confirmed
 ### Soft requirements (strategy will be weaker without, but can proceed with assumptions):
 
 3. Brand voice (→ `brand-voice-extractor`)
-4. Existing performance data (what's been tried, what worked, what failed)
-5. Production capacity (how many leads/sales can the business handle per week)
+4. Attractive character — the human face of the brand for content and outreach (→ `attractive-character-builder`)
+5. Existing performance data (what's been tried, what worked, what failed)
+6. Production capacity (how many leads/sales can the business handle per week)
 
 If a hard requirement is missing, **stop and route to the prerequisite skill.** Do not produce a partial strategy on assumptions about who the customer is or what the offer is.
 
@@ -242,6 +246,9 @@ Then map the delegation:
 | Warm/cold outreach | `ad-script-writer` (cold-call patterns adapted for DM/email) | Outreach scripts, sequence structure |
 | Free content | `hook-angle-writer` + `brand-voice-extractor` | Hook banks, content angles, voice guide |
 | Funnel (any channel) | `funnel-copy-writer` + `vsl-writer` | Connected funnel copy, VSL script |
+| Email nurturing (any channel) | `nurture-email-writer` + `attractive-character-builder` | Nurture email sequences, character-driven storytelling |
+| Launch sequence (any channel) | `launch-email-writer` + `attractive-character-builder` | Launch email sequence, event-driven timeline |
+| Content repurposing | `podcast-to-copy` + `hook-angle-writer` | Podcast transcripts into ads, emails, and posts |
 
 Completion: each of the top-3 channels has a clear game plan with delegation targets defined.
 
