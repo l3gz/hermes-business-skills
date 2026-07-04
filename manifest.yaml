@@ -1,7 +1,8 @@
 packs:
   marketing:
-    description: Marketing, copywriting, avatars, offers, hooks, funnels, launches, VSLs, ad scripts, Meta Ads, lead gen, creative briefs, and human editing.
+    description: Marketing, copywriting, avatars, offers, hooks, funnels, launches, VSLs, ad scripts, Meta Ads, lead gen, creative briefs, strategy, and human editing.
     skills:
+      - marketing-strategy-orchestrator
       - avatar-builder
       - attractive-character-builder
       - offer-builder
