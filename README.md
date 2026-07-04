@@ -9,7 +9,11 @@ This repo is separate from `llm-wiki-starter` on purpose:
 
 ## Current pack
 
-`marketing` — a connected system of copywriting and marketing skills.
+`marketing` — a connected system of 21 marketing, copywriting, and paid-media skills.
+
+### Entry point
+
+- `marketing-strategy-orchestrator`: the diagnostic and routing skill — decides which channels to use based on offer, avatar, price, margin, and business stage. Gates on prerequisites (avatar + offer must exist), then delegates to the execution skills. **Start here for any new marketing engagement.**
 
 ### Foundation skills
 
@@ -20,29 +24,50 @@ This repo is separate from `llm-wiki-starter` on purpose:
 - `brand-voice-extractor`: brand voice guide, one-liner, StoryBrand clarity
 - `human-editor`: finishing pass for clarity, human tone, and claim safety
 
-### Output skills
+### Copywriting and content skills
 
 - `podcast-to-copy`: turn transcripts into hooks, descriptions, emails, and social copy
 - `nurture-email-writer`: nurture sequences, soap opera sequence, retention/onboarding copy
 - `launch-email-writer`: product launch sequences, PLC content, webinar structure
-- `funnel-page-writer`: landing, opt-in, sales, and funnel pages
+- `funnel-page-writer`: landing, opt-in, sales, and funnel pages (single page)
+- `funnel-copy-writer`: full multi-page funnel copy orchestration — assembles the copy skills into one connected funnel
+- `vsl-writer`: video sales letter scripts (long-form, VSL framework, hook → promise → proof → offer)
+- `ad-script-writer`: video ad scripts (hook, pattern interrupt, social-proof, CTA)
+- `ad-creative-brief-writer`: creative briefs for ad production (angle, format, constraints, deliverables)
+
+### Meta Ads skills
+
+- `meta-ads-manager`: plan, structure, launch, or audit Meta ad campaigns (objective, CBO/ABO, budget, testing plan)
+- `meta-audience-builder`: audience strategy (broad vs lookalike vs interest, retargeting sequences, exclusions)
+- `meta-creative-tester`: creative testing design (test structure, variables, sprints, winner/kill criteria)
+- `meta-ads-scaler`: scaling architecture (vertical/horizontal budget increases, scaling rules)
+- `campaign-optimizer`: diagnose and optimize live campaigns (metrics, Learning Phase, frequency, kill/scale/wait)
+- `meta-lead-gen`: Meta lead-gen form and qualification design (Instant Forms, qualification questions, funnel integration)
 
 ### How the skills connect
 
-The skills are designed to work as a system:
+The skills are designed to work as a system with the orchestrator as entry point:
 
 ```text
-raw sources / transcripts / books
-        ↓
-client wiki pages
+marketing-strategy-orchestrator (entry point — diagnoses channels, delegates)
+        ↓ gates on: avatar + offer must exist
         ↓
 avatar-builder + attractive-character-builder + brand-voice-extractor + offer-builder
         ↓
 hook-angle-writer
         ↓
-podcast-to-copy / nurture-email-writer / launch-email-writer / funnel-page-writer
+┌─────────────────────────┬──────────────────────┬──────────────────────┐
+│ copy & content          │ funnel               │ meta ads             │
+│                         │                      │                      │
+│ podcast-to-copy         │ funnel-copy-writer   │ meta-ads-manager     │
+│ nurture-email-writer    │  (orchestrates →)    │ meta-audience-builder│
+│ launch-email-writer     │ funnel-page-writer   │ meta-creative-tester │
+│ ad-script-writer        │ vsl-writer           │ meta-ads-scaler      │
+│ ad-creative-brief-writer│                      │ campaign-optimizer   │
+│                         │                      │ meta-lead-gen        │
+└─────────────────────────┴──────────────────────┴──────────────────────┘
         ↓
-human-editor
+human-editor (final pass on any output)
 ```
 
 Client-specific facts, avatars, characters, offers, and voice live in the client's LLM wiki under `businesses/<business-slug>/`. The skills are generic procedures. Build quality skills one by one.
