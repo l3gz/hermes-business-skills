@@ -25,9 +25,13 @@ The core discipline: **strategy before tactics.** Most marketing failures are no
 
 The framework draws from Alex Hormozi's $100M Leads (the "Core Four" channel framework + the lead-collector amplification layer) and the Acquisition.com $100M Scaling Roadmap (the business-stage progression that determines channel readiness). Where the sources conflict, Hormozi's principles win.
 
-## When to Use
+## Intake Routing (Read This First)
 
-Use this skill when the client asks:
+When a request comes in, classify it into one of three patterns and route accordingly:
+
+### Pattern 1: Vague / strategic — use this skill
+
+The request is about overall direction, channel choice, or "what should I do?":
 
 - "What marketing should I do?"
 - "How should I launch this product/offer?"
@@ -38,7 +42,41 @@ Use this skill when the client asks:
 - "Can you build me a marketing plan?"
 - "What should I do first, second, third?"
 
-Also use this skill BEFORE loading any execution skill (`meta-ads-manager`, `vsl-writer`, etc.) if the channel choice is not yet confirmed. If the client already knows they want Meta ads and just needs the campaign built, skip this skill and go straight to `meta-ads-manager`.
+**Action:** Run the full orchestrator workflow (prerequisite gate, discovery, channel diagnosis, delegation). This is what this skill is for.
+
+### Pattern 2: Specific — skip to the right skill directly
+
+The user already knows what they want and names the output:
+
+- "I need a VSL for my weight loss offer" → `vsl-writer`
+- "All my ads go live today, build the campaigns" → `meta-ads-manager`
+- "Write a nurture sequence for my new subscribers" → `nurture-email-writer`
+- "Turn this podcast into email copy" → `podcast-to-copy`
+- "Build me a landing page for this offer" → `funnel-page-writer`
+- "My campaigns are underperforming, diagnose them" → `campaign-optimizer`
+
+**Action:** Skip this skill. Go straight to the named skill. Do not force the user through strategy diagnosis when they already know the channel and the deliverable.
+
+### Pattern 3: Ambiguous — ask ONE clarifying question, then route
+
+The request is partially specific but the exact deliverable is unclear:
+
+- "I want copy for this avatar" → ask: "What kind of copy — a nurture email sequence, a launch email, a VSL, an ad script, or funnel pages?" Then route to the answer.
+- "I need content for my launch" → ask: "Are we talking about launch emails, a VSL, ad scripts, or a full funnel?" Then route to the answer.
+- "Help me with my ads" → ask: "Do you need campaigns built from scratch, an existing campaign optimized, or creative testing set up?" Then route to the answer.
+- "I need a creative brief" → ask: "Is this for an image ad, a video ad, or a carousel? And which placement?" Then route to `ad-creative-brief-writer`.
+
+**Action:** Ask exactly ONE clarifying question that distinguishes which execution skill is needed. Do not ask multiple questions or run discovery — just enough to route correctly. Once the user answers, go straight to the right skill.
+
+### Summary
+
+```text
+Request comes in
+  │
+  ├── vague / strategic ──────→ run this skill (full process)
+  ├── specific / named ───────→ skip to the right skill directly
+  └── ambiguous ──────────────→ ask ONE clarifying question, then route
+```
 
 Do not use this skill for:
 

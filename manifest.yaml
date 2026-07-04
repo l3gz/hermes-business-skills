@@ -1,6 +1,6 @@
 packs:
   marketing:
-    description: Marketing, copywriting, avatars, offers, hooks, funnels, launches, VSLs, ad scripts, Meta Ads, lead gen, creative briefs, strategy, and human editing.
+    description: Full marketing department — 21 skills across marketing strategy, creative direction, and paid media. Installs all three role packs.
     skills:
       - marketing-strategy-orchestrator
       - avatar-builder
@@ -23,3 +23,36 @@ packs:
       - meta-lead-gen
       - funnel-copy-writer
       - human-editor
+
+  marketing-agent:
+    description: Marketing strategy, offers, avatars, brand voice, copywriting, content, funnels, VSLs, ad scripts, and human editing. The marketing strategist role — entry point for any marketing engagement.
+    skills:
+      - marketing-strategy-orchestrator
+      - avatar-builder
+      - attractive-character-builder
+      - offer-builder
+      - hook-angle-writer
+      - brand-voice-extractor
+      - podcast-to-copy
+      - nurture-email-writer
+      - launch-email-writer
+      - funnel-page-writer
+      - funnel-copy-writer
+      - vsl-writer
+      - ad-script-writer
+      - human-editor
+
+  creative-director:
+    description: Creative briefs for image and video ad production. The creative director role — turns marketing strategy into generation-ready visual briefs for image/video tools.
+    skills:
+      - ad-creative-brief-writer
+
+  media-buyer:
+    description: Meta Ads planning, audience strategy, creative testing, scaling, optimization, and lead gen. The media buyer role — manages paid media execution inside ad platforms.
+    skills:
+      - meta-ads-manager
+      - meta-audience-builder
+      - meta-creative-tester
+      - meta-ads-scaler
+      - campaign-optimizer
+      - meta-lead-gen

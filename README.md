@@ -1,21 +1,52 @@
 # Hermes Business Skills
 
-Reusable Hermes marketing skills for client work.
+A connected marketing department for Hermes Agent: 21 skills across three roles — marketing strategy, creative direction, and paid media.
 
 This repo is separate from `llm-wiki-starter` on purpose:
 
 - `llm-wiki-starter` defines the client knowledge-base structure
 - `hermes-business-skills` installs repeatable marketing workflows into Hermes
 
-## Current pack
+## The marketing department
 
-`marketing` — a connected system of 21 marketing, copywriting, and paid-media skills.
+The skills are organized into three roles. Each role owns a set of skills and hands off to the others:
 
-### Entry point
+```text
+marketing-strategy-orchestrator (entry point — diagnoses channels, delegates)
+        ↓ gates on: avatar + offer must exist
+        ↓
+┌─────────────────────────┬──────────────────────┬──────────────────────┐
+│ marketing-agent         │ creative-director    │ media-buyer          │
+│ (strategy + copy)       │ (visual production)  │ (paid media)         │
+│                         │                      │                      │
+│ avatar-builder          │ ad-creative-brief-   │ meta-ads-manager     │
+│ attractive-character-   │   writer             │ meta-audience-       │
+│   builder               │                      │   builder            │
+│ offer-builder           │                      │ meta-creative-tester │
+│ hook-angle-writer       │                      │ meta-ads-scaler      │
+│ brand-voice-extractor   │                      │ campaign-optimizer   │
+│ podcast-to-copy         │                      │ meta-lead-gen        │
+│ nurture-email-writer    │                      │                      │
+│ launch-email-writer     │                      │                      │
+│ funnel-page-writer      │                      │                      │
+│ funnel-copy-writer      │                      │                      │
+│ vsl-writer              │                      │                      │
+│ ad-script-writer        │                      │                      │
+│ human-editor            │                      │                      │
+└─────────────────────────┴──────────────────────┴──────────────────────┘
+        ↓
+human-editor (final pass on any copy output from marketing-agent)
+```
+
+### marketing-agent (14 skills)
+
+The marketing strategist. Owns offer design, avatar research, brand voice, copywriting, content, and overall marketing orchestration. This is the entry point for any marketing engagement.
+
+**Entry point:**
 
 - `marketing-strategy-orchestrator`: the diagnostic and routing skill — decides which channels to use based on offer, avatar, price, margin, and business stage. Gates on prerequisites (avatar + offer must exist), then delegates to the execution skills. **Start here for any new marketing engagement.**
 
-### Foundation skills
+**Foundation skills:**
 
 - `avatar-builder`: deep customer avatar research (interviews, reviews, market research, top-20% analysis)
 - `attractive-character-builder`: brand persona, founder story, spokesperson identity
@@ -24,7 +55,7 @@ This repo is separate from `llm-wiki-starter` on purpose:
 - `brand-voice-extractor`: brand voice guide, one-liner, StoryBrand clarity
 - `human-editor`: finishing pass for clarity, human tone, and claim safety
 
-### Copywriting and content skills
+**Copywriting and content skills:**
 
 - `podcast-to-copy`: turn transcripts into hooks, descriptions, emails, and social copy
 - `nurture-email-writer`: nurture sequences, soap opera sequence, retention/onboarding copy
@@ -33,9 +64,16 @@ This repo is separate from `llm-wiki-starter` on purpose:
 - `funnel-copy-writer`: full multi-page funnel copy orchestration — assembles the copy skills into one connected funnel
 - `vsl-writer`: video sales letter scripts (long-form, VSL framework, hook → promise → proof → offer)
 - `ad-script-writer`: video ad scripts (hook, pattern interrupt, social-proof, CTA)
-- `ad-creative-brief-writer`: creative briefs for ad production (angle, format, constraints, deliverables)
 
-### Meta Ads skills
+### creative-director (1 skill)
+
+The creative director. Owns visual direction, image-generation briefs, ad creative direction, and brand-aligned visual review. Takes the marketing strategy + hook + offer from the marketing-agent and turns it into a generation-ready visual brief.
+
+- `ad-creative-brief-writer`: creative briefs for ad production (creative concept, format, aspect ratio by placement, visual concept, text overlay, caption, CTA, generation parameters, testing tag). Feeds image/video tools like Higgsfield, Nano Banana, OpenAI Images, local sd.cpp, or a human designer/editor.
+
+### media-buyer (6 skills)
+
+The media buyer. Owns paid media planning, ad account analysis, spend experiments, and campaign performance. Takes the creative assets and strategy from the other roles and deploys them inside ad platforms.
 
 - `meta-ads-manager`: plan, structure, launch, or audit Meta ad campaigns (objective, CBO/ABO, budget, testing plan)
 - `meta-audience-builder`: audience strategy (broad vs lookalike vs interest, retargeting sequences, exclusions)
@@ -44,30 +82,27 @@ This repo is separate from `llm-wiki-starter` on purpose:
 - `campaign-optimizer`: diagnose and optimize live campaigns (metrics, Learning Phase, frequency, kill/scale/wait)
 - `meta-lead-gen`: Meta lead-gen form and qualification design (Instant Forms, qualification questions, funnel integration)
 
-### How the skills connect
-
-The skills are designed to work as a system with the orchestrator as entry point:
+### How the roles connect
 
 ```text
-marketing-strategy-orchestrator (entry point — diagnoses channels, delegates)
-        ↓ gates on: avatar + offer must exist
-        ↓
-avatar-builder + attractive-character-builder + brand-voice-extractor + offer-builder
-        ↓
-hook-angle-writer
-        ↓
-┌─────────────────────────┬──────────────────────┬──────────────────────┐
-│ copy & content          │ funnel               │ meta ads             │
-│                         │                      │                      │
-│ podcast-to-copy         │ funnel-copy-writer   │ meta-ads-manager     │
-│ nurture-email-writer    │  (orchestrates →)    │ meta-audience-builder│
-│ launch-email-writer     │ funnel-page-writer   │ meta-creative-tester │
-│ ad-script-writer        │ vsl-writer           │ meta-ads-scaler      │
-│ ad-creative-brief-writer│                      │ campaign-optimizer   │
-│                         │                      │ meta-lead-gen        │
-└─────────────────────────┴──────────────────────┴──────────────────────┘
-        ↓
-human-editor (final pass on any output)
+marketing-agent (strategy + copy)
+  │
+  ├── hands off visual briefs → creative-director
+  ├── hands off paid media execution → media-buyer
+  └── final copy pass ← human-editor (marketing-agent owns this)
+  
+creative-director (visual production)
+  │
+  ├── receives strategy + hook + offer from marketing-agent
+  ├── produces generation-ready briefs for image/video tools
+  └── hands off campaign execution → media-buyer
+
+media-buyer (paid media)
+  │
+  ├── receives creative assets + strategy from the other roles
+  ├── deploys and manages campaigns inside ad platforms
+  └── hands off creative refreshes → creative-director
+      hands off copy changes → marketing-agent
 ```
 
 Client-specific facts, avatars, characters, offers, and voice live in the client's LLM wiki under `businesses/<business-slug>/`. The skills are generic procedures. Build quality skills one by one.
@@ -80,10 +115,18 @@ Dry-run first:
 python3 scripts/install_skills.py --pack marketing --dry-run
 ```
 
-Install the marketing pack into the active Hermes profile:
+Install the full marketing department into the active Hermes profile:
 
 ```bash
 python3 scripts/install_skills.py --pack marketing
+```
+
+Install a single role:
+
+```bash
+python3 scripts/install_skills.py --pack marketing-agent
+python3 scripts/install_skills.py --pack creative-director
+python3 scripts/install_skills.py --pack media-buyer
 ```
 
 Install one skill:
