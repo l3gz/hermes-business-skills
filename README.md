@@ -109,35 +109,52 @@ Client-specific facts, avatars, characters, offers, and voice live in the client
 
 ## Quick start
 
-Dry-run first:
+### One-liner install (no clone left behind)
+
+Installs skills directly into `~/.hermes/skills/` (or a profile-specific directory). The repo is downloaded to a temp directory and cleaned up automatically — no clone folder left behind.
 
 ```bash
+# Install the full marketing pack (21 skills):
+curl -fsSL https://raw.githubusercontent.com/l3gz/hermes-business-skills/master/install.sh | bash
+```
+
+```bash
+# Install a specific pack:
+curl -fsSL https://raw.githubusercontent.com/l3gz/hermes-business-skills/master/install.sh | bash -s -- --pack marketing-agent
+
+# Install all skills:
+curl -fsSL https://raw.githubusercontent.com/l3gz/hermes-business-skills/master/install.sh | bash -s -- --all
+
+# Install into a specific Hermes profile:
+HERMES_PROFILE=matt curl -fsSL https://raw.githubusercontent.com/l3gz/hermes-business-skills/master/install.sh | bash
+
+# Dry run (see what would be installed):
+curl -fsSL https://raw.githubusercontent.com/l3gz/hermes-business-skills/master/install.sh | bash -s -- --dry-run
+```
+
+### From a clone
+
+If you prefer to clone first:
+
+```bash
+git clone https://github.com/l3gz/hermes-business-skills.git
+cd hermes-business-skills
+
+# Dry-run first:
 python3 scripts/install_skills.py --pack marketing --dry-run
-```
 
-Install the full marketing department into the active Hermes profile:
-
-```bash
+# Install the full marketing department:
 python3 scripts/install_skills.py --pack marketing
-```
 
-Install a single role:
-
-```bash
+# Install a single role:
 python3 scripts/install_skills.py --pack marketing-agent
 python3 scripts/install_skills.py --pack creative-director
 python3 scripts/install_skills.py --pack media-buyer
-```
 
-Install one skill:
-
-```bash
+# Install one skill:
 python3 scripts/install_skills.py --skill offer-builder
-```
 
-Guided wizard:
-
-```bash
+# Guided wizard:
 python3 scripts/install_wizard.py
 ```
 
