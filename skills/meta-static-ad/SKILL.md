@@ -50,6 +50,16 @@ Near-black charcoal background. Large heavy white sans-serif typography centered
 
 **Best for:** B2B leads, appointment setting, high-ticket offers, bold claims, contrarian hooks.
 
+### 2. Ad Visual Pro (Value Shock Offer)
+
+**File:** `references/style-ad-visual-pro.md`
+
+Realistic scene background with shallow depth of field, overlaid with hyper-realistic 3D text, a saturated urgency badge, bullet points, and a CTA button. Fuses premium magazine photography with high-converting landing page aesthetics. The hero is always a concrete value (money amount, discount, savings) that triggers value-shock / FOMO.
+
+**Best for:** Home services, government rebates/subsidies, high-ticket offers with a concrete dollar value, local services with a clear savings angle.
+
+**When NOT to use:** when the offer is emotional, not quantifiable. Use dark-bold-typography for lifestyle brands, coaching, and community offers.
+
 **Example output:**
 - Background: #1a1a1a solid
 - Headline: "Leads Are Worthless. Booked Appointments Are Everything." (uppercase, bold, white, centered, ~60% of frame)
