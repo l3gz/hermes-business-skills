@@ -158,6 +158,22 @@ python3 scripts/install_skills.py --skill offer-builder
 python3 scripts/install_wizard.py
 ```
 
+## Agent setup (one-sentence prompt)
+
+If you are running Hermes Agent and have a wiki already created from `llm-wiki-starter`, paste this into your session:
+
+```text
+Read the README in hermes-business-skills and install the marketing pack into my active Hermes profile. Dry-run first, then install for real. Do not modify any Hermes config, .env files, or anything outside the skills directory.
+```
+
+The agent will read this README, run `install_skills.py --pack marketing --dry-run` first, then install for real. It only copies skill folders into your profile's skills directory. Nothing else is touched.
+
+## Where source books and reference material go
+
+The skills contain generic procedures and distilled frameworks. They do not contain books, transcripts, or client-specific documents.
+
+If you have an LLM wiki installed (llm-wiki-starter): put your source books, transcripts, and reference material in the wiki's `raw/` folders (`raw/books/`, `raw/transcripts/`, `raw/documents/`). The skills read client-specific facts from the wiki. The skills contain the procedures and frameworks; the wiki contains your actual business knowledge. Don't put books inside the skills repo.
+
 ## Where skills install
 
 Skills always end up inside the active Hermes profile. The installer picks a default target with this order of precedence:
