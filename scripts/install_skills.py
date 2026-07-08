@@ -160,13 +160,37 @@ def all_skill_names() -> list[str]:
     return sorted(p.name for p in SKILLS_DIR.iterdir() if p.is_dir())
 
 
-def copy_skill(name: str, target: Path, dry_run: bool, category: str = 'marketing') -> None:
+def _dirs_match(a: Path, b: Path) -> bool:
+    """True if two skill directories have the same relative file set and content."""
+    a_files = {p.relative_to(a): p for p in a.rglob('*') if p.is_file()}
+    b_files = {p.relative_to(b): p for p in b.rglob('*') if p.is_file()}
+    if set(a_files.keys()) != set(b_files.keys()):
+        return False
+    for rel, a_path in a_files.items():
+        if a_path.read_bytes() != b_files[rel].read_bytes():
+            return False
+    return True
+
+
+def copy_skill(name: str, target: Path, dry_run: bool, category: str = 'marketing', force: bool = False) -> None:
     src = SKILLS_DIR / name
     if not src.exists():
         raise SystemExit(f'Unknown skill: {name}')
     dst = target / category / name
+
+    # Safety: if dst exists and does NOT match this repo's skill, refuse unless --force.
+    # This prevents clobbering a user's hand-edited or third-party skill.
+    if dst.exists() and not dry_run:
+        if not _dirs_match(src, dst) and not force:
+            raise SystemExit(
+                f'Refusing to overwrite existing skill: {dst}\n'
+                f'It differs from the skill in this repo — it may have been hand-edited '
+                f'or installed from elsewhere. Use --force to overwrite.'
+            )
+
     if dry_run:
-        print(f'Would install {name} -> {dst}')
+        status = 'update' if dst.exists() else 'install'
+        print(f'Would {status} {name} -> {dst}')
         return
     if dst.exists():
         shutil.rmtree(dst)
@@ -194,6 +218,11 @@ def main() -> int:
         default='marketing',
         help='Category subdirectory to install into (default: marketing). Skills install as <target>/<category>/<name>.',
     )
+    parser.add_argument(
+        '--force',
+        action='store_true',
+        help='Overwrite existing skills even if they differ from this repo (use with caution).',
+    )
     args = parser.parse_args()
 
     selected: list[str] = []
@@ -214,7 +243,7 @@ def main() -> int:
 
     print(f'Target: {target / args.category}')
     for name in selected:
-        copy_skill(name, target, args.dry_run, args.category)
+        copy_skill(name, target, args.dry_run, args.category, args.force)
     print('Done. Restart Hermes or run /reset so installed skills are visible.')
     return 0
 
