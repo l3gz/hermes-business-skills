@@ -160,11 +160,11 @@ def all_skill_names() -> list[str]:
     return sorted(p.name for p in SKILLS_DIR.iterdir() if p.is_dir())
 
 
-def copy_skill(name: str, target: Path, dry_run: bool) -> None:
+def copy_skill(name: str, target: Path, dry_run: bool, category: str = 'marketing') -> None:
     src = SKILLS_DIR / name
     if not src.exists():
         raise SystemExit(f'Unknown skill: {name}')
-    dst = target / name
+    dst = target / category / name
     if dry_run:
         print(f'Would install {name} -> {dst}')
         return
@@ -189,6 +189,11 @@ def main() -> int:
         ),
     )
     parser.add_argument('--dry-run', action='store_true', help='Print actions without copying')
+    parser.add_argument(
+        '--category',
+        default='marketing',
+        help='Category subdirectory to install into (default: marketing). Skills install as <target>/<category>/<name>.',
+    )
     args = parser.parse_args()
 
     selected: list[str] = []
@@ -207,9 +212,9 @@ def main() -> int:
     if not args.dry_run:
         target.mkdir(parents=True, exist_ok=True)
 
-    print(f'Target: {target}')
+    print(f'Target: {target / args.category}')
     for name in selected:
-        copy_skill(name, target, args.dry_run)
+        copy_skill(name, target, args.dry_run, args.category)
     print('Done. Restart Hermes or run /reset so installed skills are visible.')
     return 0
 
