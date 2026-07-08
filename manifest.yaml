@@ -1,6 +1,6 @@
 packs:
   marketing:
-    description: Full marketing department — 21 skills across marketing strategy, creative direction, and paid media. Installs all three role packs.
+    description: Full marketing department — 22 skills across marketing strategy, creative direction, and paid media. Installs all three role packs.
     skills:
       - marketing-strategy-orchestrator
       - avatar-builder
@@ -20,6 +20,7 @@ packs:
       - meta-ads-scaler
       - campaign-optimizer
       - ad-creative-brief-writer
+      - meta-static-ad
       - meta-lead-gen
       - funnel-copy-writer
       - human-editor
@@ -46,6 +47,7 @@ packs:
     description: Creative briefs for image and video ad production. The creative director role — turns marketing strategy into generation-ready visual briefs for image/video tools.
     skills:
       - ad-creative-brief-writer
+      - meta-static-ad
 
   media-buyer:
     description: Meta Ads planning, audience strategy, creative testing, scaling, optimization, and lead gen. The media buyer role — manages paid media execution inside ad platforms.
