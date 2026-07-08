@@ -174,6 +174,8 @@ The skills contain generic procedures and distilled frameworks. They do not cont
 
 If you have an LLM wiki installed (llm-wiki-starter): put your source books, transcripts, and reference material in the wiki's `raw/` folders (`raw/books/`, `raw/transcripts/`, `raw/documents/`). The skills read client-specific facts from the wiki. The skills contain the procedures and frameworks; the wiki contains your actual business knowledge. Don't put books inside the skills repo.
 
+The wiki supports a hybrid model: if you already have client folders, project files, or deliverables, declare them in `SCHEMA.md` under `## Content folders`. They stay where they are — the skills can reference them through the wiki without forcing you to reorganize. Client deliverables are working documents, not knowledge-graph nodes; they do not need frontmatter or lint enforcement.
+
 ## Where skills install
 
 Skills always end up inside the active Hermes profile. The installer picks a default target with this order of precedence:
