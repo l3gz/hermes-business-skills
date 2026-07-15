@@ -7,7 +7,7 @@ license: MIT
 metadata:
   hermes:
     tags: [marketing, strategy, go-to-market, channel-selection, orchestrator, acquisition, hormozi]
-    related_skills: [avatar-builder, offer-builder, attractive-character-builder, meta-ads-manager, meta-creative-tester, meta-audience-builder, meta-ads-scaler, campaign-optimizer, meta-lead-gen, ad-creative-brief-writer, ad-script-writer, vsl-writer, funnel-copy-writer, funnel-page-writer, hook-angle-writer, brand-voice-extractor, email-writer, podcast-to-copy, human-editor]
+    related_skills: [avatar-builder, offer-builder, attractive-character-builder, meta-ads-manager, meta-creative-tester, meta-audience-builder, meta-ads-scaler, campaign-optimizer, meta-lead-gen, ad-creative-brief-writer, ad-script-writer, vsl-writer, funnel-writer, hook-angle-writer, brand-voice-extractor, email-writer, podcast-to-copy, human-editor]
 ---
 
 # Marketing Strategy Orchestrator
@@ -19,7 +19,7 @@ This is the diagnostic and routing skill — the entry point for any marketing e
 1. **Given this offer, this avatar, this price, and this business stage — which channels should we use?**
 2. **In what order, and what's the game plan for each?**
 
-It then delegates each channel's execution to the specialized sub-skills (`meta-ads-manager`, `vsl-writer`, `ad-script-writer`, `funnel-copy-writer`, etc.) and assembles their outputs into one connected marketing strategy document.
+It then delegates each channel's execution to the specialized sub-skills (`meta-ads-manager`, `vsl-writer`, `ad-script-writer`, `funnel-writer`, etc.) and assembles their outputs into one connected marketing strategy document.
 
 The core discipline: **strategy before tactics.** Most marketing failures are not execution failures — they are channel-selection failures. Running Meta ads for a business with no margin to fund CAC. Doing cold outreach when the avatar is a warm-introduction buyer. Posting organic content to an audience of zero. This skill prevents those mismatches by diagnosing the right channels *before* any execution begins.
 
@@ -52,7 +52,7 @@ The user already knows what they want and names the output:
 - "All my ads go live today, build the campaigns" → `meta-ads-manager`
 - "Write a nurture sequence for my new subscribers" → `email-writer`
 - "Turn this podcast into email copy" → `podcast-to-copy`
-- "Build me a landing page for this offer" → `funnel-page-writer`
+- "Build me a landing page for this offer" → `funnel-writer`
 - "My campaigns are underperforming, diagnose them" → `campaign-optimizer`
 
 **Action:** Skip this skill. Go straight to the named skill. Do not force the user through strategy diagnosis when they already know the channel and the deliverable.
@@ -83,7 +83,7 @@ Do not use this skill for:
 - building a specific campaign (→ `meta-ads-manager`)
 - writing a VSL (→ `vsl-writer`)
 - writing ad scripts (→ `ad-script-writer`)
-- building a funnel (→ `funnel-copy-writer`)
+- building a funnel (→ `funnel-writer`)
 - creating the offer (→ `offer-builder`)
 - defining the avatar (→ `avatar-builder`)
 - extracting the brand voice (→ `brand-voice-extractor`)
@@ -280,10 +280,10 @@ Then map the delegation:
 | Channel | Delegates to | What the sub-skill produces |
 |---|---|---|
 | Paid ads (Meta) | `meta-ads-manager` + `ad-creative-brief-writer` + `ad-script-writer` | Campaign structure, creative briefs, ad scripts |
-| Paid ads (lead gen) | `meta-lead-gen` + `funnel-copy-writer` | Instant Forms, qualification, funnel copy |
+| Paid ads (lead gen) | `meta-lead-gen` + `funnel-writer` | Instant Forms, qualification, funnel copy |
 | Warm/cold outreach | `ad-script-writer` (cold-call patterns adapted for DM/email) | Outreach scripts, sequence structure |
 | Free content | `hook-angle-writer` + `brand-voice-extractor` | Hook banks, content angles, voice guide |
-| Funnel (any channel) | `funnel-copy-writer` + `vsl-writer` | Connected funnel copy, VSL script |
+| Funnel (any channel) | `funnel-writer` + `vsl-writer` | Connected funnel copy, VSL script |
 | Email nurturing (any channel) | `email-writer` + `attractive-character-builder` | Nurture email sequences, character-driven storytelling |
 | Content repurposing | `podcast-to-copy` + `hook-angle-writer` | Podcast transcripts into ads, emails, and posts |
 

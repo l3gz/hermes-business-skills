@@ -42,7 +42,7 @@ Do not use this skill for:
 - the creative itself (images, video, copy, hooks) — use `meta-creative-tester`, `ad-script-writer`, `hook-angle-writer`
 - the avatar or persona research at the buyer-psychology level — use `avatar-builder`
 - daily optimization, metrics diagnosis, and budget pacing — use `campaign-optimizer`
-- the landing page or funnel the ads point to — use `funnel-page-writer` or `vsl-writer`
+- the landing page or funnel the ads point to — use `funnel-writer` or `vsl-writer`
 
 ## Multi-Business Rule
 

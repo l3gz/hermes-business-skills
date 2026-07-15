@@ -1,6 +1,6 @@
 # Hermes Business Skills
 
-A connected marketing department for Hermes Agent: 21 skills across three roles — marketing strategy, creative direction, and paid media.
+A connected marketing department for Hermes Agent: 20 skills across three roles — marketing strategy, creative direction, and paid media.
 
 This repo is separate from `llm-wiki-starter` on purpose:
 
@@ -26,9 +26,8 @@ marketing-strategy-orchestrator (entry point — diagnoses channels, delegates)
 │ hook-angle-writer       │                      │ meta-ads-scaler      │
 │ brand-voice-extractor   │                      │ campaign-optimizer   │
 │ podcast-to-copy         │                      │ meta-lead-gen        │
-│ email-writer    │                      │                      │
-│ funnel-page-writer      │                      │                      │
-│ funnel-copy-writer      │                      │                      │
+│ email-writer            │                      │                      │
+│ funnel-writer           │                      │                      │
 │ vsl-writer              │                      │                      │
 │ ad-script-writer        │                      │                      │
 │ human-editor            │                      │                      │
@@ -37,7 +36,7 @@ marketing-strategy-orchestrator (entry point — diagnoses channels, delegates)
 human-editor (final pass on any copy output from marketing-agent)
 ```
 
-### marketing-agent (13 skills)
+### marketing-agent (12 skills)
 
 The marketing strategist. Owns offer design, avatar research, brand voice, copywriting, content, and overall marketing orchestration. This is the entry point for any marketing engagement.
 
@@ -58,8 +57,7 @@ The marketing strategist. Owns offer design, avatar research, brand voice, copyw
 
 - `podcast-to-copy`: turn transcripts into hooks, descriptions, emails, and social copy
 - `email-writer`: nurture, welcome, onboarding, retention, and ongoing-value email sequences
-- `funnel-page-writer`: landing, opt-in, sales, and funnel pages (single page)
-- `funnel-copy-writer`: full multi-page funnel copy orchestration — assembles the copy skills into one connected funnel
+- `funnel-writer`: funnel pages (landing, opt-in, sales, checkout) and full multi-page funnel copy orchestration
 - `vsl-writer`: video sales letter scripts (long-form, VSL framework, hook → promise → proof → offer)
 - `ad-script-writer`: video ad scripts (hook, pattern interrupt, social-proof, CTA)
 
@@ -112,7 +110,7 @@ Client-specific facts, avatars, characters, offers, and voice live in the client
 Installs skills directly into `~/.hermes/skills/` (or a profile-specific directory). The repo is downloaded to a temp directory and cleaned up automatically — no clone folder left behind.
 
 ```bash
-# Install the full marketing pack (21 skills):
+# Install the full marketing pack (20 skills):
 curl -fsSL https://raw.githubusercontent.com/l3gz/hermes-business-skills/master/install.sh | bash
 ```
 

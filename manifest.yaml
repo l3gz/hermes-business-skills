@@ -1,6 +1,6 @@
 packs:
   marketing:
-    description: Full marketing department — 21 skills across marketing strategy, creative direction, and paid media. Installs all three role packs.
+    description: Full marketing department — 20 skills across marketing strategy, creative direction, and paid media. Installs all three role packs.
     skills:
       - marketing-strategy-orchestrator
       - avatar-builder
@@ -10,7 +10,7 @@ packs:
       - brand-voice-extractor
       - podcast-to-copy
       - email-writer
-      - funnel-page-writer
+      - funnel-writer
       - vsl-writer
       - ad-script-writer
       - meta-ads-manager
@@ -21,7 +21,7 @@ packs:
       - ad-creative-brief-writer
       - meta-static-ad
       - meta-lead-gen
-      - funnel-copy-writer
+      - funnel-writer
       - human-editor
 
   marketing-agent:
@@ -35,8 +35,7 @@ packs:
       - brand-voice-extractor
       - podcast-to-copy
       - email-writer
-      - funnel-page-writer
-      - funnel-copy-writer
+      - funnel-writer
       - vsl-writer
       - ad-script-writer
       - human-editor

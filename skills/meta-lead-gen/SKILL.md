@@ -7,7 +7,7 @@ license: MIT
 metadata:
   hermes:
     tags: [marketing, meta-ads, lead-gen, facebook-ads, paid-social, instant-forms, crm, sales-funnel]
-    related_skills: [meta-ads-manager, meta-creative-tester, meta-audience-builder, funnel-page-writer, offer-builder, avatar-builder]
+    related_skills: [meta-ads-manager, meta-creative-tester, meta-audience-builder, funnel-writer, offer-builder, avatar-builder]
 ---
 
 # Meta Lead Gen
@@ -42,7 +42,7 @@ Do not use this skill for:
 - creative production (ad images, video, copy) — use `ad-creative-brief-writer`, `ad-script-writer`, `hook-angle-writer`
 - audience research at the avatar level — use `avatar-builder`
 - offer construction — use `offer-builder`
-- the landing page or funnel copy the ads point to — use `funnel-page-writer` or `vsl-writer`
+- the landing page or funnel copy the ads point to — use `funnel-writer` or `vsl-writer`
 - the sales script or close itself — out of scope for this skill
 - ecommerce purchase campaigns — use `meta-ads-manager` with the Sales objective (this skill covers lead capture, not online transactions)
 

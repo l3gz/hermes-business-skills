@@ -44,7 +44,7 @@ Do not use this skill for:
 - building the offer being advertised — use `offer-builder`
 - avatar research — use `avatar-builder`
 - brand voice extraction — use `brand-voice-extractor`
-- the landing page or sales page the ad sends traffic to — use `funnel-page-writer`
+- the landing page or sales page the ad sends traffic to — use `funnel-writer`
 - final copy polish after the brief is drafted — use `human-editor`
 - inventing proof, testimonials, results, or claims the offer cannot support
 

@@ -1,8 +1,108 @@
-# Funnel Copy Frameworks Reference
+# Funnel Frameworks Reference
 
-This reference distills the funnel archetypes, the message-match framework, the golden-thread principle, the delegation matrix, and the common funnel disconnects used by the `funnel-copy-writer` skill. It is a field guide distilled from the indexed sources (ad-to-funnel mapping, VSL structure, offer psychology, and conversion principles). Use it to plan the funnel architecture and enforce continuity, then verify all claims, proof, prices, and guarantees against the client's real offer.
+This reference is the field guide for the `funnel-writer` skill. It contains the page frameworks (for single-page work) and the funnel orchestration frameworks (for full multi-page builds): funnel archetypes, the message-match framework, the golden-thread principle, the delegation matrix, and common funnel disconnects. Use it to plan the funnel architecture and write the pages, then verify all claims, proof, prices, and guarantees against the client's real offer.
 
-## The Golden Thread
+---
+
+## Part 1: Page Frameworks
+
+Use these frameworks to plan landing pages, opt-in pages, sales pages, webinar pages, and funnel sections. This is an original summary, not book text.
+
+### Value Ladder
+
+A value ladder maps how a customer ascends from low-friction entry to deeper paid transformation.
+
+Common rungs:
+
+1. Bait: free or low-friction lead magnet.
+2. Frontend: low-ticket first purchase.
+3. Core: main offer.
+4. Backend: high-ticket, done-for-you, coaching, implementation, mastermind, or premium access.
+5. Continuity: recurring value, maintenance, membership, community, replenishment, or retained support.
+
+Rule: each rung should create a natural next problem that the next rung solves.
+
+### Funnel logic
+
+A funnel moves people through relationship stages:
+
+1. Traffic temperature: cold, warm, or hot.
+2. Pre-frame: why this matters and why now.
+3. Subscriber qualification: exchange value for contact.
+4. Buyer qualification: first purchase or application.
+5. Hyperactive buyer identification: order bumps, upsells, deeper application.
+6. Relationship aging: nurture, proof, trust, and ascension.
+7. Selling environment shift: move high-ticket or complex decisions to call, webinar, workshop, or live event.
+
+### StoryBrand SB7
+
+Use this as the clarity layer:
+
+1. Customer is the hero.
+2. Customer has a problem.
+   - External: practical problem.
+   - Internal: emotional frustration.
+   - Philosophical: why it should not be this way.
+3. Brand is the guide.
+   - Empathy.
+   - Authority.
+4. Guide gives a plan.
+5. Customer is called to action.
+6. Failure is avoided.
+7. Success is shown.
+
+### Marketing Made Simple page wireframe
+
+Use this for most simple pages:
+
+1. Header: what you offer, how it helps, what to do next.
+2. Stakes: what happens if they stay stuck.
+3. Value proposition: key benefits.
+4. Guide: empathy and authority.
+5. Plan: simple steps.
+6. Explanatory section: short narrative and mechanism.
+7. Video: optional.
+8. Price or product choices: optional.
+9. Footer: secondary links and details.
+
+### Long-form sales page sequence
+
+Use this when the offer needs more persuasion:
+
+1. Hook/headline.
+2. Identify the avatar and problem.
+3. Agitate stakes and cost of delay.
+4. Introduce the new mechanism or insight.
+5. Show the guide or attractive character.
+6. Explain the offer and stack.
+7. Provide proof.
+8. Address objections.
+9. Frame price and value.
+10. Add guarantee/risk reversal.
+11. Add real urgency or scarcity.
+12. Call to action.
+13. PS or final summary.
+
+### Page section checklist
+
+Every section should answer one question:
+
+- Why should I stop and read?
+- Is this for me?
+- What problem does this solve?
+- Why have other things failed?
+- Why should I believe this?
+- What do I get?
+- What happens if I do nothing?
+- What is the next step?
+
+---
+
+## Part 2: Funnel Orchestration Frameworks
+
+Use these frameworks when building a full multi-page funnel. They govern the architecture, the golden thread, message match, and continuity across every step.
+
+### The Golden Thread
 
 The golden thread is the single promise, mechanism, and CTA that runs through every step of the funnel. Without it, a funnel is a collection of pages. With it, a funnel is one continuous conversation.
 
@@ -17,21 +117,21 @@ The thread has six strands. Define all six before any page is planned:
 
 **One-sentence test:** "[Avatar] gets [promise] through [mechanism], and every step of this funnel says exactly that." If any step cannot be traced back to this sentence, it is off-thread.
 
-## The Message-Match Framework
+### The Message-Match Framework
 
 Message match is the principle that every transition between funnel steps must be seamless. When a prospect clicks an ad, three elements must carry over perfectly to the destination — and carry through every subsequent step.
 
-### The Three Pillars of Message Match
+#### The Three Pillars of Message Match
 
 1. **Promise match** — the outcome promised in the ad is the outcome delivered on the landing page, expanded in the VSL, and confirmed at checkout. No new promises appear mid-funnel. If the ad promises "30-50 high-ticket clients," the landing page headline leads with exactly that.
 2. **Language match** — the terminology, key phrases, and tone carry through every step. The avatar hears the same words from the brand at every touchpoint. If the ad calls the problem "the murdered budget," the landing page and VSL use the same phrase.
 3. **Aesthetic-direction match** — while this skill is copy-only, the copy implies a visual and tone direction. Flag anywhere the copy implies a shift that would break visual continuity for the design team (the deferred `funnel-html-builder`).
 
-### Why message match breaks funnels
+#### Why message match breaks funnels
 
 A disconnect between what a user sees in the ad and what they experience on the landing page is one of the primary reasons funnels fail to convert. The click is a micro-commitment built on an expectation; if the destination breaks that expectation, the prospect bounces. Every page must validate the click that brought the prospect there.
 
-## The Message-Match Audit Checklist
+### The Message-Match Audit Checklist
 
 Run this five-point audit across every step-to-step transition in the funnel:
 
@@ -57,7 +157,7 @@ Run this five-point audit across every step-to-step transition in the funnel:
    
    Never quote a testimonial differently on two pages. Source it once, quote it consistently.
 
-## Selling the Click vs. Selling the Offer
+### Selling the Click vs. Selling the Offer
 
 The most common funnel mapping mistake is trying to sell the entire product inside the ad. The ad's sole job is to sell the click — to treat the click as a low-resistance micro-commitment.
 
@@ -66,7 +166,9 @@ The most common funnel mapping mistake is trying to sell the entire product insi
 
 If the ad tries to do the VSL's job, the prospect has no reason to click. If the VSL tries to do the ad's job, it loses the warmed prospect who already clicked for the deep content.
 
-## Funnel Archetypes
+---
+
+## Part 3: Funnel Archetypes
 
 Each archetype has a step map. Choose the archetype that matches the business model, offer price, and traffic temperature.
 
@@ -154,30 +256,26 @@ Each archetype has a step map. Choose the archetype that matches the business mo
 
 **Golden-thread note:** the product is the star, not the founder. The ad demo must match the product page experience. Price comparison is handled honestly. Risk reversal (returns, guarantees) is the primary conversion lever.
 
-## The Delegation Matrix
+---
 
-This skill delegates page copy to specialist skills. It does not write the copy itself.
+## Part 4: Delegation Matrix (Scripts Only)
+
+This skill writes all page copy. It delegates only scripts (VSL, ad, webinar, email) to specialist skills.
 
 | Funnel step | Skill | Notes |
 |---|---|---|
 | Cold / warm / hot traffic ad (video, image, carousel) | `ad-script-writer` | Pass the hook, the avatar, the traffic temperature, and the CTA (sell the click). |
-| Opt-in page, lead magnet page | `funnel-page-writer` | Pass the lead magnet, the hook variant, and the next step. |
-| Landing page (pre-VSL or direct-to-offer) | `funnel-page-writer` | Pass the hook, the offer summary, and the CTA. |
-| VSL page (the wrapper that hosts the video) | `funnel-page-writer` | The page around the video; not the script. |
 | VSL script | `vsl-writer` | Pass the offer, avatar, hook, industry variant, and CTA destination. |
-| Sales page (long-form) | `funnel-page-writer` | Pass the full offer doc, the hook, the proof, and the objections. |
-| Webinar registration page | `funnel-page-writer` | Pass the webinar promise, time expectation, and hook. |
 | Webinar script / deck script | `vsl-writer` (webinar variant) | Long-form; pass the three pillars and the offer reveal plan. |
-| Application page | `funnel-page-writer` | Pass the qualification criteria and the avatar call-out. |
-| Booking / calendar page copy | `funnel-page-writer` | Pass the call promise and the no-show reducer. |
-| Checkout page copy | `funnel-page-writer` | Pass the exact offer terms (price, guarantee, bonus stack) to match the VSL/sales page verbatim. |
-| Order bump / upsell / downsell page | `funnel-page-writer` (offer from `offer-builder`) | Pass the bump offer and the objection it removes. |
-| Thank-you / delivery page | `funnel-page-writer` | Pass the delivery steps and the next action (onboarding, nurture, upsell). |
 | Nurture / follow-up email sequence | `email-writer` | Pass the golden thread, the offer, and the sequence goal. |
 
-When delegating, always pass: the golden thread (promise, mechanism, hook, voice, proof path), the step context (traffic temperature, awareness level, previous step, next step), and the specific CTA. Each skill owns its output quality; this skill owns the continuity.
+All page copy — opt-in, landing, VSL wrapper, sales page, webinar registration, application, booking, checkout, order bump, thank-you — is written by this skill using the page frameworks in Part 1.
 
-## Common Funnel Disconnects and Fixes
+When delegating scripts, always pass: the golden thread (promise, mechanism, hook, voice, proof path), the step context (traffic temperature, awareness level, previous step, next step), and the specific CTA. Each script skill owns its output quality; this skill owns the continuity.
+
+---
+
+## Part 5: Common Funnel Disconnects and Fixes
 
 ### Disconnect 1: The ad hook does not match the landing page headline
 **Symptom:** the ad hooks with one idea, the landing page opens with another. The prospect feels disoriented and bounces.
@@ -211,7 +309,9 @@ When delegating, always pass: the golden thread (promise, mechanism, hook, voice
 **Symptom:** the opt-in delivers a resource but does not reveal the deeper problem the core offer solves. The lead goes cold.
 **Fix:** the lead magnet solves a narrow obstacle and naturally surfaces the next problem. The thank-you page and nurture sequence bridge to the core offer using the same golden thread.
 
-## Behavioral Filtering and Identity Transition
+---
+
+## Part 6: Behavioral Filtering and Identity Transition
 
 A high-converting funnel does not just deliver information; it systematically shifts the prospect's identity as they move toward the purchase.
 
@@ -219,7 +319,7 @@ A high-converting funnel does not just deliver information; it systematically sh
 - **Low-ticket qualification** (a $7-$97 offer or paid application) separates active buyers from browsers. Once a prospect makes a small financial commitment, their identity shifts from passive viewer to active participant, lowering friction for the backend offer.
 - **The CTA arc is an identity arc:** clicker → subscriber → watcher → buyer. Each step's copy speaks to the identity the prospect holds at that step.
 
-## CTA Escalation Map
+### CTA Escalation Map
 
 The ask escalates one logical level at a time. Same destination, escalating commitment.
 
@@ -234,7 +334,7 @@ The ask escalates one logical level at a time. Same destination, escalating comm
 
 A jump of more than one level breaks the arc. A drop in the CTA (e.g., a "learn more" on the sales page) signals the prospect is not yet ready for the ask and the upstream steps need to do more work.
 
-## Proof Sequencing Map
+### Proof Sequencing Map
 
 Proof is deployed in a specific order across the funnel. Never repeat the same proof at the same intensity; never contradict a result across pages.
 
@@ -245,6 +345,8 @@ Proof is deployed in a specific order across the funnel. Never repeat the same p
 | Checkout / thank-you (late) | Consensus — many people like you, social validation | "I'm making the right choice / others did too" |
 
 Source each proof point once. Quote it consistently. Flag any proof that is not from real source material.
+
+---
 
 ## Safety Rules
 

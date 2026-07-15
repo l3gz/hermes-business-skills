@@ -43,7 +43,7 @@ Do not use this skill for:
 - audience research at the avatar level — use `avatar-builder`
 - offer construction — use `offer-builder`
 - daily optimization and metrics diagnosis — use `campaign-optimizer`
-- the landing page or funnel the ads point to — use `funnel-page-writer` or `vsl-writer`
+- the landing page or funnel the ads point to — use `funnel-writer` or `vsl-writer`
 
 ## Multi-Business Rule
 

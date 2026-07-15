@@ -7,7 +7,7 @@ license: MIT
 metadata:
   hermes:
     tags: [marketing, brand, voice, messaging, copywriting, clarity]
-    related_skills: [attractive-character-builder, avatar-builder, hook-angle-writer, funnel-page-writer, email-writer, human-editor]
+    related_skills: [attractive-character-builder, avatar-builder, hook-angle-writer, funnel-writer, email-writer, human-editor]
 ---
 
 # Brand Voice Extractor

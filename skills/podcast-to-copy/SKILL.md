@@ -7,7 +7,7 @@ license: MIT
 metadata:
   hermes:
     tags: [marketing, podcast, repurposing, copywriting, content]
-    related_skills: [avatar-builder, attractive-character-builder, hook-angle-writer, brand-voice-extractor, offer-builder, email-writer, funnel-page-writer, human-editor]
+    related_skills: [avatar-builder, attractive-character-builder, hook-angle-writer, brand-voice-extractor, offer-builder, email-writer, funnel-writer, human-editor]
 ---
 
 # Podcast to Copy Repurposer
@@ -166,7 +166,7 @@ Turn the extracted assets into the requested outputs. Reuse the foundation skill
 - **Hooks:** a batch tagged by desire, awareness level, and channel, following the `hook-angle-writer` process. Include spoken-style hooks for clips.
 - **Social posts:** posts and short threads built from stories, parables, quotes, contrarian beliefs, and epiphanies, shaped per channel.
 - **Emails:** 2 to 5 emails built from stories and epiphanies, each with one idea, one story, and one call to action, ready to feed `email-writer`.
-- **Sales-page angles:** proof points, objection-handling lines, and contrarian belief framings mapped to sales-page sections (headline, mechanism, proof, objections), ready for `funnel-page-writer`.
+- **Sales-page angles:** proof points, objection-handling lines, and contrarian belief framings mapped to sales-page sections (headline, mechanism, proof, objections), ready for `funnel-writer`.
 
 Completion: each requested output exists, is built only from mined assets, and carries the risk flags from step 5 where relevant.
 

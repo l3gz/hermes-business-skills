@@ -44,7 +44,7 @@ Do not use this skill for:
 - creative testing design (test structure, variables, sprints) — use `meta-creative-tester`
 - audience strategy (lookalike tiers, broad vs interest, exclusions) — use `meta-audience-builder`
 - creative production itself (scripts, images, video) — use `ad-script-writer`, `vsl-writer`, `ad-creative-brief-writer`
-- the landing page or funnel the ads point to — use `funnel-page-writer` or `vsl-writer`
+- the landing page or funnel the ads point to — use `funnel-writer` or `vsl-writer`
 - lead-gen form and qualification design — use `meta-lead-gen`
 
 ## Multi-Business Rule

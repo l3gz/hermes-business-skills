@@ -7,7 +7,7 @@ license: MIT
 metadata:
   hermes:
     tags: [marketing, advertising, ad-scripts, copywriting, video-ads, cold-calling, conversion, paid-traffic]
-    related_skills: [vsl-writer, offer-builder, avatar-builder, attractive-character-builder, brand-voice-extractor, hook-angle-writer, funnel-page-writer, human-editor]
+    related_skills: [vsl-writer, offer-builder, avatar-builder, attractive-character-builder, brand-voice-extractor, hook-angle-writer, funnel-writer, human-editor]
 ---
 
 # Ad Script Writer
@@ -36,7 +36,7 @@ Use this skill when the client asks for:
 Do not use this skill for:
 
 - a full VSL (Video Sales Letter) longer than 60 seconds with a complete offer reveal and stack build — use `vsl-writer`
-- a landing page or sales page — use `funnel-page-writer`
+- a landing page or sales page — use `funnel-writer`
 - building the offer itself — use `offer-builder`
 - avatar research — use `avatar-builder`
 - brand voice extraction — use `brand-voice-extractor`

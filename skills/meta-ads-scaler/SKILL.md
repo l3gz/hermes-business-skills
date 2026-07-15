@@ -42,7 +42,7 @@ Do not use this skill for:
 - creative testing methodology and winner identification — use `meta-creative-tester`
 - audience research and lookalike source selection — use `meta-audience-builder`
 - daily optimization, metrics diagnosis, and routine management — use `campaign-optimizer`
-- building the offer or landing page the ads point to — use `offer-builder`, `funnel-page-writer`, or `vsl-writer`
+- building the offer or landing page the ads point to — use `offer-builder`, `funnel-writer`, or `vsl-writer`
 
 ## Multi-Business Rule
 

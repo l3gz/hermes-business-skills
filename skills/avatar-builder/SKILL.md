@@ -7,7 +7,7 @@ license: MIT
 metadata:
   hermes:
     tags: [marketing, avatar, customer-research, copywriting, offer]
-    related_skills: [brand-voice-extractor, podcast-to-copy, funnel-page-writer, email-writer, human-editor]
+    related_skills: [brand-voice-extractor, podcast-to-copy, funnel-writer, email-writer, human-editor]
 ---
 
 # Customer Avatar Builder

@@ -7,7 +7,7 @@ license: MIT
 metadata:
   hermes:
     tags: [marketing, hooks, headlines, angles, copywriting]
-    related_skills: [avatar-builder, attractive-character-builder, brand-voice-extractor, offer-builder, podcast-to-copy, email-writer, funnel-page-writer, human-editor]
+    related_skills: [avatar-builder, attractive-character-builder, brand-voice-extractor, offer-builder, podcast-to-copy, email-writer, funnel-writer, human-editor]
 ---
 
 # Hook and Angle Writer
