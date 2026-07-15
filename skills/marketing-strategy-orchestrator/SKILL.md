@@ -7,7 +7,7 @@ license: MIT
 metadata:
   hermes:
     tags: [marketing, strategy, go-to-market, channel-selection, orchestrator, acquisition, hormozi]
-    related_skills: [avatar-builder, offer-builder, attractive-character-builder, meta-ads-manager, meta-creative-tester, meta-audience-builder, meta-ads-scaler, campaign-optimizer, meta-lead-gen, ad-creative-brief-writer, ad-script-writer, vsl-writer, funnel-copy-writer, funnel-page-writer, hook-angle-writer, brand-voice-extractor, nurture-email-writer, launch-email-writer, podcast-to-copy, human-editor]
+    related_skills: [avatar-builder, offer-builder, attractive-character-builder, meta-ads-manager, meta-creative-tester, meta-audience-builder, meta-ads-scaler, campaign-optimizer, meta-lead-gen, ad-creative-brief-writer, ad-script-writer, vsl-writer, funnel-copy-writer, funnel-page-writer, hook-angle-writer, brand-voice-extractor, email-writer, podcast-to-copy, human-editor]
 ---
 
 # Marketing Strategy Orchestrator
@@ -50,7 +50,7 @@ The user already knows what they want and names the output:
 
 - "I need a VSL for my weight loss offer" → `vsl-writer`
 - "All my ads go live today, build the campaigns" → `meta-ads-manager`
-- "Write a nurture sequence for my new subscribers" → `nurture-email-writer`
+- "Write a nurture sequence for my new subscribers" → `email-writer`
 - "Turn this podcast into email copy" → `podcast-to-copy`
 - "Build me a landing page for this offer" → `funnel-page-writer`
 - "My campaigns are underperforming, diagnose them" → `campaign-optimizer`
@@ -88,7 +88,7 @@ Do not use this skill for:
 - defining the avatar (→ `avatar-builder`)
 - extracting the brand voice (→ `brand-voice-extractor`)
 - building an attractive character (→ `attractive-character-builder`)
-- writing email sequences (→ `nurture-email-writer`, `launch-email-writer`)
+- writing email sequences (→ `email-writer`)
 - repurposing podcast content (→ `podcast-to-copy`)
 
 ## The Prerequisite Gate (Non-Negotiable)
@@ -284,8 +284,7 @@ Then map the delegation:
 | Warm/cold outreach | `ad-script-writer` (cold-call patterns adapted for DM/email) | Outreach scripts, sequence structure |
 | Free content | `hook-angle-writer` + `brand-voice-extractor` | Hook banks, content angles, voice guide |
 | Funnel (any channel) | `funnel-copy-writer` + `vsl-writer` | Connected funnel copy, VSL script |
-| Email nurturing (any channel) | `nurture-email-writer` + `attractive-character-builder` | Nurture email sequences, character-driven storytelling |
-| Launch sequence (any channel) | `launch-email-writer` + `attractive-character-builder` | Launch email sequence, event-driven timeline |
+| Email nurturing (any channel) | `email-writer` + `attractive-character-builder` | Nurture email sequences, character-driven storytelling |
 | Content repurposing | `podcast-to-copy` + `hook-angle-writer` | Podcast transcripts into ads, emails, and posts |
 
 Completion: each of the top-3 channels has a clear game plan with delegation targets defined.

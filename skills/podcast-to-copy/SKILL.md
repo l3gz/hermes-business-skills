@@ -7,7 +7,7 @@ license: MIT
 metadata:
   hermes:
     tags: [marketing, podcast, repurposing, copywriting, content]
-    related_skills: [avatar-builder, attractive-character-builder, hook-angle-writer, brand-voice-extractor, offer-builder, nurture-email-writer, launch-email-writer, funnel-page-writer, human-editor]
+    related_skills: [avatar-builder, attractive-character-builder, hook-angle-writer, brand-voice-extractor, offer-builder, email-writer, funnel-page-writer, human-editor]
 ---
 
 # Podcast to Copy Repurposer
@@ -39,7 +39,7 @@ Do not use this skill for:
 - building the avatar from scratch (use `avatar-builder`)
 - building the attractive character from scratch (use `attractive-character-builder`, this skill feeds it)
 - structuring the offer (use `offer-builder`)
-- writing a full launch or nurture sequence (use `launch-email-writer` or `nurture-email-writer`, this skill supplies the raw material)
+- writing a full launch or nurture sequence (use `email-writer`, this skill supplies the raw material)
 - final polish (use `human-editor`)
 - inventing stories, results, claims, or quotes the speaker did not actually say
 
@@ -165,7 +165,7 @@ Turn the extracted assets into the requested outputs. Reuse the foundation skill
 - **Episode titles:** 8 to 12 options mixing curiosity, benefit, and contrarian angles, drawn from the hooks and contrarian beliefs. Keep them honest to the content.
 - **Hooks:** a batch tagged by desire, awareness level, and channel, following the `hook-angle-writer` process. Include spoken-style hooks for clips.
 - **Social posts:** posts and short threads built from stories, parables, quotes, contrarian beliefs, and epiphanies, shaped per channel.
-- **Emails:** 2 to 5 emails built from stories and epiphanies, each with one idea, one story, and one call to action, ready to feed `nurture-email-writer` or `launch-email-writer`.
+- **Emails:** 2 to 5 emails built from stories and epiphanies, each with one idea, one story, and one call to action, ready to feed `email-writer`.
 - **Sales-page angles:** proof points, objection-handling lines, and contrarian belief framings mapped to sales-page sections (headline, mechanism, proof, objections), ready for `funnel-page-writer`.
 
 Completion: each requested output exists, is built only from mined assets, and carries the risk flags from step 5 where relevant.

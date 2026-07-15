@@ -198,7 +198,7 @@ This skill delegates page copy to the specialist skills. It does not write the c
 | Checkout page copy | `funnel-page-writer` |
 | Order bump / upsell / downsell page | `funnel-page-writer` (offer from `offer-builder`) |
 | Thank-you / delivery page | `funnel-page-writer` |
-| Nurture / follow-up email sequence | `nurture-email-writer` / `launch-email-writer` |
+| Nurture / follow-up email sequence | `email-writer` |
 
 When delegating, pass each skill the golden thread (promise, mechanism, hook, voice, proof path) and the specific step context (traffic temperature, awareness level, previous step, next step, CTA). Each skill produces its own output; this skill assembles and enforces continuity.
 

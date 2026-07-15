@@ -26,8 +26,7 @@ marketing-strategy-orchestrator (entry point — diagnoses channels, delegates)
 │ hook-angle-writer       │                      │ meta-ads-scaler      │
 │ brand-voice-extractor   │                      │ campaign-optimizer   │
 │ podcast-to-copy         │                      │ meta-lead-gen        │
-│ nurture-email-writer    │                      │                      │
-│ launch-email-writer     │                      │                      │
+│ email-writer    │                      │                      │
 │ funnel-page-writer      │                      │                      │
 │ funnel-copy-writer      │                      │                      │
 │ vsl-writer              │                      │                      │
@@ -38,7 +37,7 @@ marketing-strategy-orchestrator (entry point — diagnoses channels, delegates)
 human-editor (final pass on any copy output from marketing-agent)
 ```
 
-### marketing-agent (14 skills)
+### marketing-agent (13 skills)
 
 The marketing strategist. Owns offer design, avatar research, brand voice, copywriting, content, and overall marketing orchestration. This is the entry point for any marketing engagement.
 
@@ -58,8 +57,7 @@ The marketing strategist. Owns offer design, avatar research, brand voice, copyw
 **Copywriting and content skills:**
 
 - `podcast-to-copy`: turn transcripts into hooks, descriptions, emails, and social copy
-- `nurture-email-writer`: nurture sequences, soap opera sequence, retention/onboarding copy
-- `launch-email-writer`: product launch sequences, PLC content, webinar structure
+- `email-writer`: nurture, welcome, onboarding, retention, and ongoing-value email sequences
 - `funnel-page-writer`: landing, opt-in, sales, and funnel pages (single page)
 - `funnel-copy-writer`: full multi-page funnel copy orchestration — assembles the copy skills into one connected funnel
 - `vsl-writer`: video sales letter scripts (long-form, VSL framework, hook → promise → proof → offer)

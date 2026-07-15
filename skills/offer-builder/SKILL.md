@@ -7,7 +7,7 @@ license: MIT
 metadata:
   hermes:
     tags: [marketing, offers, copywriting, pricing, funnel, conversion]
-    related_skills: [avatar-builder, attractive-character-builder, brand-voice-extractor, hook-angle-writer, funnel-page-writer, launch-email-writer, nurture-email-writer, human-editor]
+    related_skills: [avatar-builder, attractive-character-builder, brand-voice-extractor, hook-angle-writer, funnel-page-writer, email-writer, human-editor]
 ---
 
 # Offer Builder

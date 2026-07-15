@@ -173,7 +173,7 @@ This skill delegates page copy to specialist skills. It does not write the copy 
 | Checkout page copy | `funnel-page-writer` | Pass the exact offer terms (price, guarantee, bonus stack) to match the VSL/sales page verbatim. |
 | Order bump / upsell / downsell page | `funnel-page-writer` (offer from `offer-builder`) | Pass the bump offer and the objection it removes. |
 | Thank-you / delivery page | `funnel-page-writer` | Pass the delivery steps and the next action (onboarding, nurture, upsell). |
-| Nurture / follow-up email sequence | `nurture-email-writer` / `launch-email-writer` | Pass the golden thread, the offer, and the sequence goal. |
+| Nurture / follow-up email sequence | `email-writer` | Pass the golden thread, the offer, and the sequence goal. |
 
 When delegating, always pass: the golden thread (promise, mechanism, hook, voice, proof path), the step context (traffic temperature, awareness level, previous step, next step), and the specific CTA. Each skill owns its output quality; this skill owns the continuity.
 

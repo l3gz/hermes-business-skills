@@ -7,7 +7,7 @@ license: MIT
 metadata:
   hermes:
     tags: [marketing, attractive-character, brand, storytelling, copywriting]
-    related_skills: [avatar-builder, brand-voice-extractor, podcast-to-copy, launch-email-writer, nurture-email-writer, human-editor]
+    related_skills: [avatar-builder, brand-voice-extractor, podcast-to-copy, email-writer, human-editor]
 ---
 
 # Attractive Character Builder
