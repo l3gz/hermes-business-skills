@@ -21,7 +21,6 @@ packs:
       - ad-creative-brief-writer
       - meta-static-ad
       - meta-lead-gen
-      - funnel-writer
       - human-editor
 
   marketing-agent:
