@@ -1,6 +1,6 @@
 # Hermes Business Skills
 
-A connected marketing department for Hermes Agent: 20 skills across three roles — marketing strategy, creative direction, and paid media.
+A connected marketing department for Hermes Agent: 21 skills across four packs — marketing strategy, creative direction, paid media, and research.
 
 This repo is separate from `llm-wiki-starter` on purpose:
 
@@ -100,6 +100,12 @@ media-buyer (paid media)
   └── hands off creative refreshes → creative-director
       hands off copy changes → marketing-agent
 ```
+
+### research (1 skill)
+
+The researcher. Owns market and product validation — proves (or kills) an idea with cited evidence before any marketing work begins. Runs web research through Firecrawl (search, scrape, structured extraction) and pulls community sentiment through Agent-Reach platform CLIs (Reddit, X, YouTube).
+
+- `product-market-fit`: validate whether a startup/product idea has real market fit through 5-lane research (problem evidence, sentiment, competitive landscape, market size, timing), then score /100 against a weighted rubric with a pursue / refine / kill verdict. Research and confirmation only — never builds the product.
 
 Client-specific facts, avatars, characters, offers, and voice live in the client's LLM wiki under `businesses/<business-slug>/`. The skills are generic procedures. Build quality skills one by one.
 

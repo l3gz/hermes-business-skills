@@ -55,3 +55,8 @@ packs:
       - meta-ads-scaler
       - campaign-optimizer
       - meta-lead-gen
+
+  research:
+    description: Market and product validation research. Validates whether an idea has real market fit through web research and community sentiment analysis, then scores it /100 with a go/no-go verdict. Powered by Firecrawl (web search, scrape, structured extraction) and Agent-Reach platform CLIs (Reddit, X, YouTube).
+    skills:
+      - product-market-fit
