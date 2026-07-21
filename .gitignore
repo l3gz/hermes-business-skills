@@ -3,3 +3,6 @@ __pycache__/
 *.pyc
 .env
 graphify-out/
+
+# CodeGraph - rebuildable runtime state, never committed
+.codegraph/
